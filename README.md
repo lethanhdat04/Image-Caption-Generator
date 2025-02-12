@@ -1,9 +1,9 @@
 # Image Caption Generator using CNN and LSTM
 
-***Demo***
-![image](https://github.com/user-attachments/assets/8e3ff4fc-7e95-44d3-b572-4a7ada23009b)
+## Demo
+![image](https://github.com/user-attachments/assets/02dc5ca7-fec8-488e-b720-89d60c5f69ce)
 
-***SETUP***
+## SETUP
 1. Install ecessary libraries:
  
    `pip install -r requirements.txt`
