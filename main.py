@@ -36,13 +36,11 @@ def generate_and_display_caption(image_path, model_path, tokenizer_path, feature
             break
     caption = in_text.replace("startseq", "").replace("endseq", "").strip()
 
-    # Display the image with the generated caption
-    img = load_img(image_path, target_size=(img_size, img_size))
-    plt.figure(figsize=(8, 8))
-    plt.imshow(img)
-    plt.axis('off')
-    plt.title(caption, fontsize=16, color='blue')
-    st.pyplot(plt)  # Display image in Streamlit
+    # Display the caption with larger font size
+    st.markdown(f"<h2 style='text-align: center; color: blue;'>{caption}</h2>", unsafe_allow_html=True)
+
+    # Display the image
+    st.image(image_path, use_container_width=True)
 
 
 # Streamlit app interface
